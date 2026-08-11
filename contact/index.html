@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Contact | bailan.org</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+
+
+    <script src="/js/theme.js" defer></script>
+</head>
+<body class="contact">
+  <header>
+    <h1><a href="/">bailan.org</a></h1>
+<div class="header-right">
+  
+  <nav>
+    <ul>
+        <li><a href="/posts/">Posts</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/about/">About</a></li>
+    </ul>
+  </nav>
+  <button id="theme-toggle" aria-label="Toggle theme"></button>
+</div>
+  </header>
+  <main>
+    
+  <h1>Contact</h1>
+  <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+  <input type="hidden" name="access_key" value="1bb66521-10d7-41df-a6fe-65b429e0aa44">
+  <input type="text" name="name" placeholder="Name" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <textarea name="message" placeholder="Message" rows="4" required></textarea>
+  <div class="h-captcha" data-captcha="true"></div>
+  <button type="submit">Send</button>
+</form>
+
+  
+
+  </main>
+  <footer>
+    <p>&copy; 2025-2026 bailan.org. All rights reserved.</p>
+
+  </footer>
+  
+<script src="https://web3forms.com/client/script.js" async defer></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('.contact-form');
+    if (!form) return;
+
+    
+    const statusDiv = document.createElement('div');
+    statusDiv.style.display = 'none';
+    statusDiv.style.position = 'fixed';
+    statusDiv.style.top = '0';
+    statusDiv.style.left = '0';
+    statusDiv.style.width = '100%';
+    statusDiv.style.height = '100%';
+    statusDiv.style.backgroundColor = 'oklch(75% 0.183 55.934)';
+    statusDiv.style.color = '#fff';
+    statusDiv.style.fontSize = '1.6rem';
+    statusDiv.style.alignItems = 'center';
+    statusDiv.style.justifyContent = 'center';
+    statusDiv.style.zIndex = '1000';
+    statusDiv.textContent = 'Email sent :)';
+    document.body.appendChild(statusDiv);
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault(); 
+
+      const formData = new FormData(form);
+
+      fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success) {
+          
+          statusDiv.style.display = 'flex';
+          
+          form.style.display = 'none';
+          
+          setTimeout(function () {
+            window.location.href = '/'; 
+          }, 2000);
+        } else {
+          alert('Message not sent. Please try again.');
+        }
+      })
+      .catch(error => {
+        alert('Network error. Please try again.');
+        console.error(error);
+      });
+    });
+  });
+</script>
+
+
+</body>
+</html>

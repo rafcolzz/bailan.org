@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Posts on bailan.org</title>
+		<link>http://localhost:1313/posts/</link>
+		<description>Recent content in Posts on bailan.org</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 07 Jan 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>QOTD</title>
+				<link>http://localhost:1313/posts/2026-01-07/</link>
+				<pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/2026-01-07/</guid>
+				<description>&lt;p&gt;“It’s not enough to fly first class, others must fly coach.”&lt;/p&gt;&#xA;&lt;p&gt;If you&amp;rsquo;ve flown first class, can you share the experience? I only know Ryanair&amp;hellip; at least there is no first class in those planes!&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>QOTD</title>
+				<link>http://localhost:1313/posts/2025-11-26/</link>
+				<pubDate>Wed, 26 Nov 2025 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/2025-11-26/</guid>
+				<description>&lt;p&gt;&amp;ldquo;Privilege is invisible to those who have it.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Can we get a little bit more empathy around here?&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>QOTD</title>
+				<link>http://localhost:1313/posts/2025-11-12/</link>
+				<pubDate>Wed, 12 Nov 2025 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/2025-11-12/</guid>
+				<description>&lt;p&gt;&amp;ldquo;Every man has two deaths, when he is buried in the ground and the last time someone says his name.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Why can&amp;rsquo;t we invert the order? Let&amp;rsquo;s get forgotten before perishing organically!&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>
